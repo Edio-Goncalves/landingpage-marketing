@@ -1,0 +1,9 @@
+@mixin content {
+  width: 100%;
+  max-width: 1440px;
+}
+@mixin display-f-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,1 +1,61 @@
 @use "forward" as fw;
+
+body {
+  @include fw.display-f-c;
+  font-family: "Space Grotesk", sans-serif;
+  margin: 0px 20px;
+}
+
+.header-content {
+  @include fw.content();
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 0px;
+  display: flex;
+  .logo {
+    height: 36px;
+  }
+  nav {
+    @include fw.display-f-c;
+    ul {
+      font-size: 16px;
+      display: flex;
+      list-style: none;
+      gap: 10px;
+      li {
+        padding: 10px;
+        cursor: pointer;
+      }
+    }
+    .btn-nav {
+      @include fw.display-f-c;
+      cursor: pointer;
+      margin-left: 30px;
+
+      a {
+        background-color: fw.$white-color;
+        border: 1px solid fw.$dark-color;
+        padding: 1.5rem 2rem;
+        border-radius: 1rem;
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration: none;
+        color: fw.$dark-color;
+        &:hover {
+          color: fw.$white-color;
+          background-color: fw.$dark-color;
+        }
+      }
+    }
+  }
+}
+.main-content {
+  @include fw.content();
+  background-color: rgb(176, 227, 174);
+  main {
+    img {
+      width: 500px;
+    }
+  }
+}
