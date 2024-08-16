@@ -24,8 +24,11 @@ body {
       list-style: none;
       gap: 10px;
       li {
-        padding: 10px;
         cursor: pointer;
+        padding: 10px;
+        a {
+          color: fw.$dark-color;
+        }
       }
     }
     .btn-nav {
@@ -40,7 +43,6 @@ body {
         border-radius: 1rem;
         font-size: 20px;
         font-weight: 400;
-        text-decoration: none;
         color: fw.$dark-color;
         &:hover {
           color: fw.$white-color;
