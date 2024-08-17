@@ -1,37 +1,57 @@
 @use "forward" as fw;
 
+@mixin card-services(
+  $bg-color: rgb(243, 243, 243),
+  $border-color: rgba(25, 26, 35, 1)
+) {
+  width: 49%;
+  background-color: $bg-color;
+  border-radius: 2rem;
+  padding: 48px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid $border-color;
+  box-shadow: $border-color 0px 5px 0px 0px;
+}
+
 body {
   @include fw.display-f-c;
   font-family: "Space Grotesk", sans-serif;
   margin: 0px 20px;
 }
 
+/* HEADER */
 .header-content {
   @include fw.content();
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 12px 0px;
-  display: flex;
+
   .logo {
     height: 36px;
   }
+
   nav {
     @include fw.display-f-c;
+
     ul {
       font-size: 1rem;
       font-weight: 500;
       display: flex;
       list-style: none;
       gap: 10px;
+
       li {
         cursor: pointer;
         padding: 10px;
+
         a {
           color: fw.$dark-color;
         }
       }
     }
+
     .btn-nav {
       @include fw.display-f-c;
       cursor: pointer;
@@ -45,6 +65,7 @@ body {
         font-size: 1.25rem;
         font-weight: 400;
         color: fw.$dark-color;
+
         &:hover {
           color: fw.$white-color;
           background-color: fw.$dark-color;
@@ -52,31 +73,36 @@ body {
       }
     }
   }
-} /* end header */
+}
 
+/* MAIN */
 .main-content {
   @include fw.content();
 
   .wrapper-main {
-    margin-top: 40px;
-    margin-bottom: 80px;
+    margin: 40px 0px 80px;
     display: flex;
     align-items: center;
+
     main {
       display: flex;
       flex-direction: column;
       gap: 15px;
       width: 50%;
+
       h1 {
         font-size: 3.75rem;
         max-width: 500px;
       }
+
       p {
         font-size: 1.25rem;
         line-height: 1.2;
       }
+
       .btn-primary {
         cursor: pointer;
+
         a {
           color: #ffffff;
           background-color: fw.$dark-color;
@@ -86,6 +112,7 @@ body {
           border-radius: 1rem;
           font-size: 1.25rem;
           font-weight: 400;
+
           &:hover {
             color: fw.$dark-color;
             background-color: fw.$white-color;
@@ -93,29 +120,130 @@ body {
         }
       }
     }
+
     img {
       width: 50%;
     }
   }
+
   .wrapper-partners {
     display: flex;
     justify-content: space-around;
     margin: 50px 0px;
+
     div {
       @include fw.display-f-c;
       cursor: pointer;
+
       img {
         height: 48px;
         filter: grayscale(1);
-        opacity: 0.5;
+        opacity: 0.8;
+
         &:hover {
           filter: grayscale(0);
           opacity: 1;
         }
       }
     }
+
     & :nth-child(2) img {
       height: 35px;
+    }
+  }
+}
+
+/* SERVICES */
+.services {
+  @include fw.content();
+  padding: 50px 0px;
+}
+
+.card {
+  > :first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+
+    h3 {
+      max-width: 220px;
+      line-height: 1.2;
+      font-size: 1.75rem;
+      font-weight: 500;
+
+      span {
+        background-color: fw.$primary-color;
+        border-radius: 0.5rem;
+        padding: 0px 5px;
+      }
+    }
+
+    .more {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 45px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        padding: 8px;
+      }
+
+      span {
+        padding-left: 20px;
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  > :last-child {
+    img {
+      max-width: 210px;
+      height: 210px;
+    }
+  }
+}
+
+.wrapper-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  > :nth-child(3n + 1) {
+    @include card-services();
+
+    > :first-child .more img {
+      background-color: fw.$dark-color;
+    }
+  }
+
+  > :nth-child(3n + 2) {
+    @include card-services(fw.$primary-color);
+
+    > :first-child {
+      h3 span {
+        background-color: rgb(255, 255, 255);
+      }
+
+      .more img {
+        background-color: fw.$dark-color;
+      }
+    }
+  }
+
+  > :nth-child(3n + 3) {
+    @include card-services(fw.$dark-color);
+
+    > :first-child {
+      h3 span {
+        background-color: rgb(255, 255, 255);
+      }
+
+      .more {
+        color: #ffffff;
+      }
     }
   }
 }
