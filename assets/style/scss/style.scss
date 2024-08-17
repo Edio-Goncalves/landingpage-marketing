@@ -1,19 +1,5 @@
 @use "forward" as fw;
 
-@mixin card-services(
-  $bg-color: rgb(243, 243, 243),
-  $border-color: rgba(25, 26, 35, 1)
-) {
-  width: 49%;
-  background-color: $bg-color;
-  border-radius: 2rem;
-  padding: 48px;
-  display: flex;
-  justify-content: space-between;
-  border: 2px solid $border-color;
-  box-shadow: $border-color 0px 5px 0px 0px;
-}
-
 body {
   @include fw.display-f-c;
   font-family: "Space Grotesk", sans-serif;
@@ -212,7 +198,7 @@ body {
   gap: 20px;
 
   > :nth-child(3n + 1) {
-    @include card-services();
+    @include fw.card-services();
 
     > :first-child .more img {
       background-color: fw.$dark-color;
@@ -220,7 +206,7 @@ body {
   }
 
   > :nth-child(3n + 2) {
-    @include card-services(fw.$primary-color);
+    @include fw.card-services(fw.$primary-color);
 
     > :first-child {
       h3 span {
@@ -234,7 +220,7 @@ body {
   }
 
   > :nth-child(3n + 3) {
-    @include card-services(fw.$dark-color);
+    @include fw.card-services(fw.$dark-color);
 
     > :first-child {
       h3 span {
