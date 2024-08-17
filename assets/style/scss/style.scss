@@ -64,6 +64,7 @@ body {
 /* MAIN */
 .main-content {
   @include fw.content();
+  margin-bottom: 80px;
 
   .wrapper-main {
     margin: 40px 0px 80px;
@@ -143,6 +144,24 @@ body {
 .services {
   @include fw.content();
   padding: 50px 0px;
+
+  > :first-child {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    h2 {
+      font-size: 3.75rem;
+      font-weight: 500;
+      background-color: fw.$primary-color;
+      border-radius: 0.5rem;
+      padding: 10px 5px;
+    }
+    p {
+      max-width: 700px;
+      margin-left: 30px;
+      font-size: 1.25rem;
+    }
+  }
 }
 
 .card {
@@ -230,6 +249,61 @@ body {
       .more {
         color: #ffffff;
       }
+    }
+  }
+}
+
+/* PROPOSTAL */
+.propostal {
+  @include fw.content;
+  margin: 80px 0px;
+  display: flex;
+  align-items: center;
+}
+.wrapper-propostal {
+  display: flex;
+  border-radius: 3rem;
+  background-color: #f3f3f3;
+
+  > :first-child {
+    width: 50%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+    p {
+      font-size: 1.25rem;
+    }
+    .btn-primary {
+      cursor: pointer;
+
+      a {
+        color: #ffffff;
+        background-color: fw.$dark-color;
+        display: inline-block;
+        border: 1px solid fw.$dark-color;
+        padding: 1.5rem 2rem;
+        border-radius: 1rem;
+        font-size: 1.25rem;
+        font-weight: 400;
+
+        &:hover {
+          color: fw.$dark-color;
+          background-color: fw.$white-color;
+        }
+      }
+    }
+  }
+  > :last-child {
+    text-align: center;
+    width: 50%;
+    img {
+      width: 450px;
+      margin: -4rem 0;
     }
   }
 }
