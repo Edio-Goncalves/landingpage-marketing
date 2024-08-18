@@ -141,7 +141,7 @@ body {
 }
 
 /* SERVICES */
-.services {
+.services-content {
   @include fw.content();
   padding: 50px 0px;
 
@@ -255,7 +255,7 @@ body {
 }
 
 /* PROPOSTAL */
-.propostal {
+.propostal-content {
   @include fw.content;
   margin: 80px 0px;
   display: flex;
@@ -311,7 +311,7 @@ body {
 }
 
 /* CASES */
-.cases {
+.cases-content {
   @include fw.content;
   margin: 100px 0px;
   > :first-child {
@@ -374,7 +374,7 @@ body {
 }
 
 /* OUR WORKING PROCESS */
-.process {
+.process-content {
   @include fw.content;
   margin: 100px 0px 160px;
 
@@ -482,7 +482,7 @@ body {
 }
 
 /* TEAM */
-.team {
+.team-content {
   @include fw.content;
   margin: 100px 0px;
   display: flex;
@@ -580,8 +580,31 @@ body {
   }
 }
 
+/* TESTIMONIALS */
+.testimonials-content {
+  @include fw.content;
+  > :first-child {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    h2 {
+      font-size: 3.75rem;
+      font-weight: 500;
+      background-color: fw.$primary-color;
+      border-radius: 0.5rem;
+      padding: 10px 5px;
+    }
+    p {
+      max-width: 700px;
+      margin-left: 30px;
+      font-size: 1.25rem;
+      line-height: 1.2;
+    }
+  }
+}
+
 /* CONTACT US */
-.contact {
+.contact-content {
   @include fw.content;
   margin: 100px 0px;
 
