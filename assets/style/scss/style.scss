@@ -373,6 +373,114 @@ body {
   }
 }
 
+/* OUR WORKING PROCESS */
+.process {
+  @include fw.content;
+  margin: 100px 0px 160px;
+
+  > :first-child {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    h2 {
+      font-size: 3.75rem;
+      font-weight: 500;
+      background-color: fw.$primary-color;
+      border-radius: 0.5rem;
+      padding: 10px 5px;
+    }
+    p {
+      max-width: 700px;
+      margin-left: 30px;
+      font-size: 1.25rem;
+      line-height: 1.2;
+    }
+  }
+  .wrapper-process {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    .card-process.open {
+      background-color: fw.$primary-color;
+      padding: 40px 60px;
+      border-radius: 2rem;
+      border: 2px solid fw.$dark-color;
+      box-shadow: fw.$dark-color 0px 5px 0px 0px;
+
+      > :first-child {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 2px solid fw.$dark-color;
+        padding-bottom: 30px;
+
+        > :first-child {
+          display: flex;
+          align-items: center;
+          h4 {
+            margin-right: 30px;
+            font-size: 3.75rem;
+          }
+          p {
+            font-size: 1.875rem;
+            font-weight: 500;
+          }
+        }
+        .expand {
+          cursor: pointer;
+          width: 50px;
+          height: 50px;
+          background-color: blue;
+          border-radius: 50%;
+        }
+      }
+      > :last-child {
+        padding: 30px 20px 0px;
+      }
+    }
+    .card-process.close {
+      background-color: #f3f3f3;
+      padding: 40px 60px;
+      border-radius: 2rem;
+      border: 2px solid fw.$dark-color;
+      box-shadow: fw.$dark-color 0px 5px 0px 0px;
+      width: 100%;
+      > :first-child {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        > :first-child {
+          display: flex;
+          align-items: center;
+          h4 {
+            margin-right: 30px;
+            font-size: 3.75rem;
+          }
+          p {
+            font-size: 1.875rem;
+            font-weight: 500;
+          }
+        }
+        .expand {
+          cursor: pointer;
+          width: 50px;
+          height: 50px;
+          background-color: blue;
+          border-radius: 50%;
+        }
+      }
+      > :last-child {
+        display: none;
+      }
+    }
+  }
+}
+
 /* TEAM */
 .team {
   @include fw.content;
