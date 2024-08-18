@@ -583,6 +583,7 @@ body {
 /* TESTIMONIALS */
 .testimonials-content {
   @include fw.content;
+
   > :first-child {
     display: flex;
     align-items: center;
@@ -599,6 +600,44 @@ body {
       margin-left: 30px;
       font-size: 1.25rem;
       line-height: 1.2;
+    }
+  }
+  .card-testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    background-color: fw.$dark-color;
+    padding: 60px 0px;
+    max-width: 100%;
+    border-radius: 2rem;
+
+    > :first-child {
+      max-width: 600px;
+      border: 1px solid fw.$primary-color;
+      border-radius: 2rem;
+      p {
+        padding: 40px;
+        font-size: 1.125rem;
+        line-height: 1.2;
+      }
+    }
+    > :nth-child(2) {
+      padding: 20px 0px 40px;
+      h4 {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: fw.$primary-color;
+      }
+      p {
+        font-size: 1.125rem;
+        line-height: 1.2;
+      }
+    }
+    > :last-child {
+      width: 300px;
+      height: 50px;
+      background-color: aqua;
     }
   }
 }
