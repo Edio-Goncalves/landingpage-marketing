@@ -403,12 +403,14 @@ body {
     flex-direction: column;
     gap: 30px;
     width: 100%;
-    .card-process.open {
+
+    .card-process {
       background-color: fw.$primary-color;
       padding: 40px 60px;
       border-radius: 2rem;
       border: 2px solid fw.$dark-color;
       box-shadow: fw.$dark-color 0px 5px 0px 0px;
+      width: 100%;
 
       > :first-child {
         max-width: 100%;
@@ -434,8 +436,25 @@ body {
           cursor: pointer;
           width: 50px;
           height: 50px;
-          background-color: blue;
+          background-color: #f3f3f3;
+          border: 1px solid fw.$dark-color;
           border-radius: 50%;
+          position: relative;
+          &::before,
+          &::after {
+            content: "";
+            position: absolute;
+            right: 11px;
+            top: 21px;
+            display: block;
+            width: 26px;
+            height: 6px;
+            background-color: black;
+            transform: rotate(90deg);
+          }
+          &::after {
+            transform: rotate(0deg);
+          }
         }
       }
       > :last-child {
@@ -444,34 +463,13 @@ body {
     }
     .card-process.close {
       background-color: #f3f3f3;
-      padding: 40px 60px;
-      border-radius: 2rem;
-      border: 2px solid fw.$dark-color;
-      box-shadow: fw.$dark-color 0px 5px 0px 0px;
-      width: 100%;
       > :first-child {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        > :first-child {
-          display: flex;
-          align-items: center;
-          h4 {
-            margin-right: 30px;
-            font-size: 3.75rem;
-          }
-          p {
-            font-size: 1.875rem;
-            font-weight: 500;
-          }
-        }
+        border: none;
+        padding-bottom: 0px;
         .expand {
-          cursor: pointer;
-          width: 50px;
-          height: 50px;
-          background-color: blue;
-          border-radius: 50%;
+          &::before {
+            transform: rotate(0deg);
+          }
         }
       }
       > :last-child {

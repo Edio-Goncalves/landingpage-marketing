@@ -1,0 +1,13 @@
+{
+  "name": "01-landingpage-marketing",
+  "version": "1.0.0",
+  "description": "Este repositório contém uma aplicação front-end desenvolvida com HTML, CSS/SASS e JavaScript, baseada em um template de design criado no Figma. O projeto foi elaborado para praticar habilidades de desenvolvimento web, incluindo a implementação de layouts responsivos e a estilização avançada com SASS.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch --style=compressed style/scss:style/css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
