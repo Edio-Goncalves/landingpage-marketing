@@ -450,10 +450,6 @@ body {
             width: 26px;
             height: 6px;
             background-color: black;
-            transform: rotate(90deg);
-          }
-          &::after {
-            transform: rotate(0deg);
           }
         }
       }
@@ -468,7 +464,7 @@ body {
         padding-bottom: 0px;
         .expand {
           &::before {
-            transform: rotate(0deg);
+            transform: rotate(90deg);
           }
         }
       }
