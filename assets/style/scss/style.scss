@@ -430,11 +430,9 @@ body {
     width: 100%;
 
     .card-process {
+      @include fw.border-shadow();
       background-color: fw.$primary-color;
       padding: 20px 30px;
-      border-radius: 2rem;
-      border: 2px solid fw.$dark-color;
-      box-shadow: fw.$dark-color 0px 5px 0px 0px;
       width: 100%;
 
       > :first-child {
@@ -527,9 +525,7 @@ body {
       flex-direction: column;
       padding: 40px;
       position: relative;
-      border-radius: 1rem;
-      border: 2px solid fw.$dark-color;
-      box-shadow: fw.$dark-color 0px 5px 0px 0px;
+      @include fw.border-shadow(1rem);
 
       > img {
         position: absolute;

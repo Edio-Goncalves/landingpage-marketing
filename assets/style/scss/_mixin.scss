@@ -29,6 +29,12 @@
   }
 }
 
+@mixin border-shadow($border-radius: 2rem) {
+  border-radius: $border-radius;
+  border: 2px solid rgba(25, 26, 35, 1);
+  box-shadow: rgba(25, 26, 35, 1) 0px 5px 0px 0px;
+}
+
 /* card-services */
 @mixin card-services(
   $bg-color: rgb(243, 243, 243),
@@ -39,12 +45,11 @@
   width: 100%;
   max-width: 600px;
   height: 350px;
-  border-radius: 2rem;
   padding: 48px;
   display: flex;
   justify-content: space-between;
-  border: 2px solid $border-color;
-  box-shadow: $border-color 0px 5px 0px 0px;
+  @include border-shadow();
+
   @media (min-width: 781px) {
     width: 100%;
     max-width: 80%;
