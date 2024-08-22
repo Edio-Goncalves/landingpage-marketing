@@ -180,28 +180,7 @@ body {
       }
 
       .btn-primary {
-        cursor: pointer;
-        text-align: center;
-        padding: 40px 0px;
-
-        a {
-          width: 90%;
-          color: #ffffff;
-          background-color: fw.$dark-color;
-          display: inline-block;
-          border: 1px solid fw.$dark-color;
-          padding: 1.5rem 2rem;
-          border-radius: 1rem;
-          font-size: 1.25rem;
-          font-weight: 400;
-          transition: background-color 0.3s ease;
-
-          &:hover {
-            color: fw.$dark-color;
-            background-color: fw.$white-color;
-            transition: background-color 0.3s ease;
-          }
-        }
+        @include fw.btn-primary($padding-top: 40px, $width: 100%);
       }
     }
   }
@@ -240,25 +219,7 @@ body {
   margin: 0px;
 
   > :first-child {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 40px;
-    h2 {
-      font-size: 36px;
-      font-weight: 500;
-      background-color: fw.$primary-color;
-      border-radius: 0.5rem;
-      padding: 5px;
-    }
-    p {
-      max-width: 700px;
-      margin-left: 30px;
-      font-size: 16px;
-      line-height: 1.2;
-      text-align: center;
-    }
+    @include fw.section-header();
   }
 
   .card {
@@ -379,26 +340,11 @@ body {
         line-height: 1.4;
       }
       .btn-primary {
-        cursor: pointer;
-        text-align: center;
-
-        a {
-          width: 90%;
-          color: #ffffff;
-          background-color: fw.$dark-color;
-          display: inline-block;
-          border: 1px solid fw.$dark-color;
-          padding: 1.5rem 2rem;
-          border-radius: 1rem;
-          font-size: 1.25rem;
-          font-weight: 400;
-          transition: background-color 0.3s ease;
-          &:hover {
-            color: fw.$dark-color;
-            background-color: fw.$white-color;
-            transition: background-color 0.3s ease;
-          }
-        }
+        @include fw.btn-primary(
+          $bg-color: fw.$dark-color,
+          $text-color: fw.$white-color,
+          $width: 100%
+        );
       }
     }
     > :last-child {
@@ -418,25 +364,7 @@ body {
   margin: 0px;
 
   > :first-child {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 40px;
-    h2 {
-      font-size: 36px;
-      font-weight: 500;
-      background-color: fw.$primary-color;
-      border-radius: 0.5rem;
-      padding: 5px;
-    }
-    p {
-      max-width: 700px;
-      margin-left: 30px;
-      font-size: 16px;
-      line-height: 1.2;
-      text-align: center;
-    }
+    @include fw.section-header();
   }
 
   > :last-child {
@@ -487,24 +415,7 @@ body {
   margin: 30px 0px;
 
   > :first-child {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-    margin-bottom: 40px;
-    h2 {
-      font-size: 36px;
-      font-weight: 500;
-      background-color: fw.$primary-color;
-      border-radius: 0.5rem;
-      padding: 5px;
-    }
-    p {
-      font-size: 16px;
-      line-height: 1.2;
-      text-align: center;
-    }
+    @include fw.section-header();
   }
 
   .wrapper-process {
@@ -599,25 +510,7 @@ body {
   margin: 30px 0px;
 
   > :first-child {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 40px;
-    h2 {
-      font-size: 36px;
-      font-weight: 500;
-      background-color: fw.$primary-color;
-      border-radius: 0.5rem;
-      padding: 5px;
-    }
-    p {
-      max-width: 700px;
-      margin-left: 30px;
-      font-size: 16px;
-      line-height: 1.2;
-      text-align: center;
-    }
+    @include fw.section-header();
   }
 
   .wrapper-team {
@@ -672,28 +565,7 @@ body {
   }
 
   .btn-primary {
-    cursor: pointer;
-    align-self: flex-end;
-    padding-top: 50px;
-    text-align: center;
-    a {
-      width: 100%;
-      color: #ffffff;
-      background-color: fw.$dark-color;
-      display: inline-block;
-      border: 1px solid fw.$dark-color;
-      padding: 1.5rem 2rem;
-      border-radius: 1rem;
-      font-size: 1.25rem;
-      font-weight: 400;
-      transition: background-color 0.3s ease;
-
-      &:hover {
-        color: fw.$dark-color;
-        background-color: fw.$white-color;
-        transition: background-color 0.3s ease;
-      }
-    }
+    @include fw.btn-primary($padding-top: 50px);
   }
 }
 
@@ -702,25 +574,7 @@ body {
   margin: 0px;
 
   > :first-child {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 40px;
-    h2 {
-      font-size: 36px;
-      font-weight: 500;
-      background-color: fw.$primary-color;
-      border-radius: 0.5rem;
-      padding: 5px;
-    }
-    p {
-      max-width: 700px;
-      margin-left: 30px;
-      font-size: 16px;
-      line-height: 1.2;
-      text-align: center;
-    }
+    @include fw.section-header();
   }
 
   .wrapper-contact {
@@ -785,28 +639,10 @@ body {
         }
       }
       .btn-primary {
-        cursor: pointer;
-        text-align: center;
-
-        a {
-          width: 100%;
-          text-align: center;
-          color: fw.$dark-color;
-          background-color: fw.$primary-color;
-          display: inline-block;
-          border: 1px solid fw.$dark-color;
-          padding: 1.5rem 2rem;
-          border-radius: 1rem;
-          font-size: 1.25rem;
-          font-weight: 400;
-          transition: background-color 0.3s ease;
-
-          &:hover {
-            color: fw.$dark-color;
-            background-color: fw.$white-color;
-            transition: background-color 0.3s ease;
-          }
-        }
+        @include fw.btn-primary(
+          $text-color: fw.$dark-color,
+          $bg-color: fw.$primary-color
+        );
       }
     }
     > :last-child {
@@ -907,28 +743,10 @@ footer {
         border-radius: 1rem;
       }
       .btn-primary {
-        width: 100%;
-        text-align: center;
-        cursor: pointer;
-
-        a {
-          width: 100%;
-          color: fw.$dark-color;
-          background-color: fw.$primary-color;
-          display: inline-block;
-          border: 1px solid fw.$dark-color;
-          padding: 1.5rem 2rem;
-          border-radius: 1rem;
-          font-size: 1.25rem;
-          font-weight: 400;
-          transition: background-color 0.3s ease;
-
-          &:hover {
-            color: fw.$dark-color;
-            background-color: fw.$white-color;
-            transition: background-color 0.3s ease;
-          }
-        }
+        @include fw.btn-primary(
+          $text-color: fw.$dark-color,
+          $bg-color: fw.$primary-color
+        );
       }
     }
   }
@@ -1244,6 +1062,8 @@ footer {
 
     .btn-primary {
       padding-right: 40px;
+      text-align: right;
+
       a {
         width: 200px;
       }
