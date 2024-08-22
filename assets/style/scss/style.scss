@@ -661,7 +661,7 @@ body {
 }
 
 /* FOOTER */
-footer {
+.footer-content {
   background-color: fw.$dark-color;
   padding-top: 80px;
   margin-left: -15px;
@@ -1120,7 +1120,7 @@ footer {
   }
 
   /* FOOTER */
-  footer {
+  .footer-content {
     padding-left: 60px;
     padding-right: 60px;
     border-top-left-radius: 3rem;
