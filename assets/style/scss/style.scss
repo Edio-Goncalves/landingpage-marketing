@@ -1,61 +1,147 @@
 @use "forward" as fw;
 
 body {
-  @include fw.display-f-c;
   font-family: "Space Grotesk", sans-serif;
-  margin: 0px 20px;
+}
+.page-content {
+  max-width: 780px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 /* HEADER */
 .header-content {
-  @include fw.content();
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 12px 0px;
+  padding: 20px 0px;
 
   .logo {
-    height: 36px;
+    cursor: pointer;
+    height: 25px;
   }
 
+  #bars {
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  #menu {
+    visibility: hidden;
+    transition: right 0.3s ease-in;
+    right: -300px;
+    &.active {
+      visibility: inherit;
+      display: flex;
+      flex-direction: column;
+      right: 0px;
+    }
+  }
+
+  .backDrop {
+    visibility: hidden;
+    transition: all 0.3s ease-in;
+    &.active {
+      visibility: inherit;
+      z-index: 1;
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
   nav {
-    @include fw.display-f-c;
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    background-color: #f3f3f3;
+    width: 300px;
+    height: 100vh;
+    text-align: right;
+
+    #close {
+      cursor: pointer;
+      font-size: 38px;
+      padding: 10px;
+      margin: 32px 13px 0px;
+    }
 
     ul {
-      font-size: 1rem;
-      font-weight: 500;
+      text-align: left;
       display: flex;
+      flex-direction: column;
       list-style: none;
-      gap: 10px;
+      padding-left: 5px;
+      position: relative;
 
       li {
         cursor: pointer;
-        padding: 10px;
+        min-width: 100px;
+        line-height: 50px;
+        padding-left: 20px;
+        background-color: #f3f3f3c5;
+        border-bottom: 1px solid rgba(27, 27, 27, 0.315);
 
         a {
           color: fw.$dark-color;
         }
       }
     }
-
     .btn-nav {
-      @include fw.display-f-c;
       cursor: pointer;
-      margin-left: 30px;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
 
       a {
         background-color: fw.$white-color;
         border: 1px solid fw.$dark-color;
-        padding: 1.5rem 2rem;
-        border-radius: 1rem;
-        font-size: 1.25rem;
-        font-weight: 400;
+        padding: 15px;
+        border-radius: 14px;
+        font-size: 16px;
         color: fw.$dark-color;
+        transition: background-color 0.3s ease;
 
         &:hover {
           color: fw.$white-color;
           background-color: fw.$dark-color;
+          transition: background-color 0.3s ease;
         }
+      }
+    }
+    .contact {
+      position: absolute;
+      bottom: 0;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: center;
+      padding: 25px;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 300;
+      height: 250px;
+
+      > :first-child {
+        font-size: 16px;
+        color: fw.$dark-color;
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: 500;
+        background-color: fw.$primary-color;
+      }
+      > :last-child {
+        line-height: 1.2;
       }
     }
   }
