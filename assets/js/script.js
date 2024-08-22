@@ -16,17 +16,30 @@ expand.map((e, index) => {
   });
 });
 
+/* menu */
+const menu = document.getElementById("menu");
+const backDrop = document.querySelector(".backDrop");
+
+function toggleMenu() {
+  menu.classList.toggle("active");
+  backDrop.classList.toggle("active");
+}
+document.getElementById("bars").addEventListener("click", toggleMenu);
+document.getElementById("close").addEventListener("click", toggleMenu);
+
+backDrop.addEventListener("click", toggleMenu);
+
 // /* testimonials */
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  grabCursor: true,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+// var swiper = new Swiper(".mySwiper", {
+//   slidesPerView: 1,
+//   grabCursor: true,
+//   loop: true,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
