@@ -1,5 +1,8 @@
 @use "forward" as fw;
-
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 3rem;
+}
 body {
   font-family: "Space Grotesk", sans-serif;
 }
@@ -372,7 +375,7 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 3rem;
-    color: #ffffff;
+    color: fw.$white-color;
     font-size: 16px;
     font-weight: 300;
     background-color: fw.$dark-color;
@@ -1232,7 +1235,9 @@ footer {
         }
       }
       .btn-nav {
-        @include fw.display-f-c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
         margin-top: 0px;
         margin-left: 30px;
