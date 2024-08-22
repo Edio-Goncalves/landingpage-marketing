@@ -1,27 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Positivus</title>
-
+    <title>Positivus Marketing</title>
+    <script
+      src="https://kit.fontawesome.com/fb0858d8b6.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="/assets/style/css/style.css" />
   </head>
   <body>
-    <div>
-      <!-- header and nav -->
+    <div class="page-content dropDown">
+      <!-- header -->
       <header class="header-content">
         <img
           class="logo"
-          src="/assets/img/logo.png"
+          src="/assets/image/icon/logo.png"
           alt="Logo marca Positivus"
         />
-        <nav>
+        <div class="backDrop"></div>
+        <i id="bars" class="fa-solid fa-bars" style="color: #191a23"></i>
+        <nav id="menu">
+          <i id="close" class="fa-solid fa-xmark" style="color: #191a23"></i>
           <ul>
             <li><a href="#"> About us</a></li>
             <li><a href="#"> Services</a></li>
@@ -30,6 +35,15 @@
             <li><a href="#"> Blog</a></li>
           </ul>
           <div class="btn-nav"><a href="#">Request a quote</a></div>
+          <div class="contact">
+            <p>Contact us:</p>
+            <p>Email: info@positivus.com</p>
+            <p>Phone: 555-567-8901</p>
+            <p>
+              Address: 1234 Main St <br />
+              Moonstone City, Stardust State 12345
+            </p>
+          </div>
         </nav>
       </header>
 
@@ -38,7 +52,12 @@
         <div class="wrapper-main">
           <main>
             <h1>Navigating the digital landscape for success</h1>
-
+            <div>
+              <img
+                src="/assets/image/icon/Illustration_main.png"
+                alt="Imagem de um auto falante"
+              />
+            </div>
             <p>
               Our digital marketing agency helps businesses grow and succeed
               online through a range of services including SEO, PPC, social
@@ -46,25 +65,33 @@
             </p>
             <div class="btn-primary"><a href="#">Book a consultation</a></div>
           </main>
-          <img
-            src="/assets/img/Illustration_main.png"
-            alt="Imagem de um auto falante"
-          />
         </div>
         <div class="wrapper-partners">
-          <div><img src="/assets/img/amazon.png" alt="Logo da amazon" /></div>
-          <div><img src="/assets/img/drilbbe.png" alt="Logo da drilbbe" /></div>
-          <div><img src="/assets/img/hubSpot.png" alt="Logo da hubSpot" /></div>
-          <div><img src="/assets/img/notion.png" alt="Logo do Notion" /></div>
-          <div><img src="/assets/img/netflix.png" alt="Logo da Netflix" /></div>
-          <div><img src="/assets/img/zoom.png" alt="Logo do Zoom" /></div>
+          <div>
+            <img src="/assets/image/icon/amazon.png" alt="Logo da amazon" />
+          </div>
+          <div>
+            <img src="/assets/image/icon/drilbbe.png" alt="Logo da drilbbe" />
+          </div>
+          <div>
+            <img src="/assets/image/icon/hubSpot.png" alt="Logo da hubSpot" />
+          </div>
+          <div>
+            <img src="/assets/image/icon/notion.png" alt="Logo do Notion" />
+          </div>
+          <div>
+            <img src="/assets/image/icon/netflix.png" alt="Logo da Netflix" />
+          </div>
+          <div>
+            <img src="/assets/image/icon/zoom.png" alt="Logo do Zoom" />
+          </div>
         </div>
       </section>
 
       <!-- services -->
       <section class="services-content">
         <div>
-          <h2>Our Services</h2>
+          <h2>Services</h2>
           <p>
             At our digital marketing agency, we offer a range of services to
             help businesses grow and succeed online. These services include:
@@ -75,13 +102,16 @@
             <div>
               <h3><span>Search engine</span> <span>optimization</span></h3>
               <div class="more">
-                <img src="/assets/img/icon/arrow-green.png" alt="Seta verde" />
+                <img
+                  src="/assets/image/icon/arrow-green.png"
+                  alt="Seta verde"
+                />
                 <span>Learn more</span>
               </div>
             </div>
             <div>
               <img
-                src="/assets/img/svg/Illustration_05.svg"
+                src="/assets/image/svg/Illustration_05.svg"
                 alt="Ilustração abstrata"
               />
             </div>
@@ -90,13 +120,16 @@
             <div>
               <h3><span>Pay-per-click</span> <span>advertising</span></h3>
               <div class="more">
-                <img src="/assets/img/icon/arrow-green.png" alt="Seta verde" />
+                <img
+                  src="/assets/image/icon/arrow-green.png"
+                  alt="Seta verde"
+                />
                 <span>Learn more</span>
               </div>
             </div>
             <div>
               <img
-                src="/assets/img/svg/Illustration_01.svg"
+                src="/assets/image/svg/Illustration_01.svg"
                 alt="Ilustração abstrata"
               />
             </div>
@@ -105,13 +138,16 @@
             <div>
               <h3><span>Social Media</span> <span>Marketing</span></h3>
               <div class="more">
-                <img src="/assets/img/icon/arrow-black.png" alt="Seta verde" />
+                <img
+                  src="/assets/image/icon/arrow-black.png"
+                  alt="Seta verde"
+                />
                 <span>Learn more</span>
               </div>
             </div>
             <div>
               <img
-                src="/assets/img/svg/Illustration_03.svg"
+                src="/assets/image/svg/Illustration_03.svg"
                 alt="Ilustração abstrata"
               />
             </div>
@@ -120,13 +156,16 @@
             <div>
               <h3><span>Email</span> <span>Marketing</span></h3>
               <div class="more">
-                <img src="/assets/img/icon/arrow-green.png" alt="Seta verde" />
+                <img
+                  src="/assets/image/icon/arrow-green.png"
+                  alt="Seta verde"
+                />
                 <span>Learn more</span>
               </div>
             </div>
             <div>
               <img
-                src="/assets/img/svg/Illustration_02.svg"
+                src="/assets/image/svg/Illustration_02.svg"
                 alt="Ilustração abstrata"
               />
             </div>
@@ -135,13 +174,16 @@
             <div>
               <h3><span>Content</span> <span>Creation</span></h3>
               <div class="more">
-                <img src="/assets/img/icon/arrow-green.png" alt="Seta verde" />
+                <img
+                  src="/assets/image/icon/arrow-green.png"
+                  alt="Seta verde"
+                />
                 <span>Learn more</span>
               </div>
             </div>
             <div>
               <img
-                src="/assets/img/svg/Illustration_04.svg"
+                src="/assets/image/svg/Illustration_04.svg"
                 alt="Ilustração abstrata"
               />
             </div>
@@ -150,13 +192,16 @@
             <div>
               <h3><span>Analytics and </span> <span>Tracking</span></h3>
               <div class="more">
-                <img src="/assets/img/icon/arrow-black.png" alt="Seta verde" />
+                <img
+                  src="/assets/image/icon/arrow-black.png"
+                  alt="Seta verde"
+                />
                 <span>Learn more</span>
               </div>
             </div>
             <div>
               <img
-                src="/assets/img/svg/Illustration_06.svg"
+                src="/assets/image/svg/Illustration_06.svg"
                 alt="Ilustração abstrata"
               />
             </div>
@@ -175,19 +220,19 @@
             </p>
 
             <div class="btn-primary">
-              <a href="#">Get your free proposal</a>
+              <a href="#">Get your proposal</a>
             </div>
           </div>
           <div>
             <img
-              src="/assets/img/svg/propostal.svg"
+              src="/assets/image/svg/propostal.svg"
               alt="Ilustração abstrata"
             />
           </div>
         </div>
       </section>
 
-      <!-- services -->
+      <!-- cases -->
       <section class="cases-content">
         <div>
           <h2>Case Studies</h2>
@@ -206,7 +251,7 @@
             </p>
             <div>
               <p>Learn more</p>
-              <img src="/assets/img/icon/arrow-green.png" alt="Seta verde" />
+              <img src="/assets/image/icon/arrow-green.png" alt="Seta verde" />
             </div>
           </div>
           <div class="case-card">
@@ -217,7 +262,7 @@
             </p>
             <div>
               <p>Learn more</p>
-              <img src="/assets/img/icon/arrow-green.png" alt="Seta verde" />
+              <img src="/assets/image/icon/arrow-green.png" alt="Seta verde" />
             </div>
           </div>
           <div class="case-card">
@@ -228,7 +273,7 @@
             </p>
             <div>
               <p>Learn more</p>
-              <img src="/assets/img/icon/arrow-green.png" alt="Seta verde" />
+              <img src="/assets/image/icon/arrow-green.png" alt="Seta verde" />
             </div>
           </div>
         </div>
@@ -237,7 +282,7 @@
       <!-- our working process -->
       <section class="process-content">
         <div>
-          <h2>Our Working Process</h2>
+          <h2>Working Process</h2>
           <p>Step-by-Step Guide to Achieving Your Business Goals</p>
         </div>
 
@@ -346,9 +391,12 @@
         </div>
         <div class="wrapper-team">
           <div class="card-team">
-            <img src="/assets/img/icon/linkedin.png" alt="Logo do linkedin" />
+            <img src="/assets/image/icon/linkedin.png" alt="Logo do linkedin" />
             <div>
-              <img src="/assets/img/picture/picture01.png" alt="Foto do CEO" />
+              <img
+                src="/assets/image/picture/picture01.png"
+                alt="Foto do CEO"
+              />
               <div>
                 <p>John Smith</p>
                 <p>CEO and Founder</p>
@@ -362,10 +410,10 @@
             </div>
           </div>
           <div class="card-team">
-            <img src="/assets/img/icon/linkedin.png" alt="Logo do linkedin" />
+            <img src="/assets/image/icon/linkedin.png" alt="Logo do linkedin" />
             <div>
               <img
-                src="/assets/img/picture/picture02.png"
+                src="/assets/image/picture/picture02.png"
                 alt="Foto da diretora operacional"
               />
               <div>
@@ -381,10 +429,10 @@
             </div>
           </div>
           <div class="card-team">
-            <img src="/assets/img/icon/linkedin.png" alt="Logo do linkedin" />
+            <img src="/assets/image/icon/linkedin.png" alt="Logo do linkedin" />
             <div>
               <img
-                src="/assets/img/picture/picture03.png"
+                src="/assets/image/picture/picture03.png"
                 alt="Foto do senior SEO especialista"
               />
               <div>
@@ -400,10 +448,10 @@
             </div>
           </div>
           <div class="card-team">
-            <img src="/assets/img/icon/linkedin.png" alt="Logo do linkedin" />
+            <img src="/assets/image/icon/linkedin.png" alt="Logo do linkedin" />
             <div>
               <img
-                src="/assets/img/picture/picture04.png"
+                src="/assets/image/picture/picture04.png"
                 alt="Foto do senior SEO especialista"
               />
               <div>
@@ -419,10 +467,10 @@
             </div>
           </div>
           <div class="card-team">
-            <img src="/assets/img/icon/linkedin.png" alt="Logo do linkedin" />
+            <img src="/assets/image/icon/linkedin.png" alt="Logo do linkedin" />
             <div>
               <img
-                src="/assets/img/picture/picture05.png"
+                src="/assets/image/picture/picture05.png"
                 alt="Foto do senior SEO especialista"
               />
               <div>
@@ -439,10 +487,10 @@
             </div>
           </div>
           <div class="card-team">
-            <img src="/assets/img/icon/linkedin.png" alt="Logo do linkedin" />
+            <img src="/assets/image/icon/linkedin.png" alt="Logo do linkedin" />
             <div>
               <img
-                src="/assets/img/picture/picture06.png"
+                src="/assets/image/picture/picture06.png"
                 alt="Foto do senior SEO especialista"
               />
               <div>
@@ -462,72 +510,11 @@
         <div class="btn-primary"><a href="#">See all team</a></div>
       </section>
 
-      <!-- testimonials -->
-      <section class="testimonials-content">
-        <div>
-          <h2>Testimonials</h2>
-          <p>
-            Hear from Our Satisfied Clients: Read Our Testimonials to Learn More
-            about Our Digital Marketing Services
-          </p>
-        </div>
-
-        <!--  -->
-        <section class="wrapper-testimonials">
-          <div class="testimonial mySwiper">
-            <div class="swiper-wrapper">
-              <div class="slide swiper-slide">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Aperiam, saepe provident dolorem a quaerat quo error facere
-                  nihil deleniti eligendi ipsum adipisci, fugit, architecto amet
-                  asperiores doloremque deserunt eum nemo.
-                </p>
-                <div class="details">
-                  <span class="name">Marnie Lotter</span>
-                  <span class="job">Web Developer</span>
-                </div>
-              </div>
-              <div class="slide swiper-slide">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Aperiam, saepe provident dolorem a quaerat quo error facere
-                  nihil deleniti eligendi ipsum adipisci, fugit, architecto amet
-                  asperiores doloremque deserunt eum nemo.
-                </p>
-                <div class="details">
-                  <span class="name">Marnie Lotter</span>
-                  <span class="job">Web Developer</span>
-                </div>
-              </div>
-              <div class="slide swiper-slide">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Aperiam, saepe provident dolorem a quaerat quo error facere
-                  nihil deleniti eligendi ipsum adipisci, fugit, architecto amet
-                  asperiores doloremque deserunt eum nemo.
-                </p>
-                <div class="details">
-                  <span class="name">Marnie Lotter</span>
-                  <span class="job">Web Developer</span>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </section>
-      </section>
-
       <!-- contact us -->
       <section class="contact-content">
         <div>
-          <h2>Our Services</h2>
-          <p>
-            At our digital marketing agency, we offer a range of services to
-            help businesses grow and succeed online. These services include:
-          </p>
+          <h2>Contact Us</h2>
+          <p>Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
         </div>
 
         <div class="wrapper-contact">
@@ -558,7 +545,7 @@
           </form>
           <div>
             <img
-              src="/assets/img/svg/contac.svg"
+              src="/assets/image/svg/contac.svg"
               alt="Imagem abstrata com estrelas"
             />
           </div>
@@ -571,7 +558,7 @@
           <div>
             <img
               class="logo"
-              src="/assets/img/logo.png"
+              src="/assets/image/icon/logo.png"
               alt="Logo da empresa positivus"
             />
           </div>
@@ -584,26 +571,9 @@
               <li><a href="#"> Blog</a></li>
             </ul>
           </nav>
-          <div>
-            <a href="#"
-              ><img
-                src="/assets/img/icon/linkedin.png"
-                alt="Logotipo do linkedin"
-            /></a>
-            <a href="#"
-              ><img
-                src="/assets/img/icon/facebook.png"
-                alt="Logotipo do facebook"
-            /></a>
-            <a href="#"
-              ><img
-                src="/assets/img/icon/twitter.png"
-                alt="Logotipo do Twitter"
-            /></a>
-          </div>
         </div>
         <div>
-          <div>
+          <div class="contact">
             <p>Contact us:</p>
             <p>Email: info@positivus.com</p>
             <p>Phone: 555-567-8901</p>
@@ -615,9 +585,26 @@
           <div>
             <input type="email" placeholder="email" />
             <div class="btn-primary">
-              <a href="#">Subscribe to news</a>
+              <a href="#">Subscribe</a>
             </div>
           </div>
+        </div>
+        <div class="media">
+          <a href="#"
+            ><img
+              src="/assets/image/icon/linkedin.png"
+              alt="Logotipo do linkedin"
+          /></a>
+          <a href="#"
+            ><img
+              src="/assets/image/icon/facebook.png"
+              alt="Logotipo do facebook"
+          /></a>
+          <a href="#"
+            ><img
+              src="/assets/image/icon/twitter.png"
+              alt="Logotipo do Twitter"
+          /></a>
         </div>
         <div>
           <p>© 2023 Positivus. All Rights Reserved.</p>
@@ -625,7 +612,6 @@
         </div>
       </footer>
     </div>
-    <script src="/assets/js/swiper-bundle.min.js"></script>
     <script src="/assets/js/script.js"></script>
   </body>
 </html>
