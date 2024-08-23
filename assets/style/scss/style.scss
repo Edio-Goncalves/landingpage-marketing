@@ -785,7 +785,7 @@ body {
   }
 }
 
-/* PAGES (PRICING AND BLOG) */
+/* ########### PAGES (pricing and blog) */
 .page-content {
   &.page {
     gap: 0px; /* 30 */
@@ -997,6 +997,7 @@ body {
     }
   }
 }
+/* ########### END PAGES (pricing and blog) */
 
 /* MEDIAS */
 @media (min-width: 781px) {
@@ -1477,7 +1478,7 @@ body {
     }
   }
 
-  /* PAGES (PRICING AND BLOG) */
+  /* ########### PAGES (pricing and blog) */
   .page-content {
     &.page {
       .page-content {
@@ -1560,4 +1561,5 @@ body {
       }
     }
   }
+  /* ########### END PAGES (pricing and blog) */
 }
