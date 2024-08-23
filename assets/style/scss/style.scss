@@ -782,6 +782,137 @@ body {
   }
 }
 
+/* PAGES (PRICING AND BLOG) */
+.page-content {
+  &.page {
+    gap: 30px;
+    height: 100%;
+    min-height: calc(100vh - 131px);
+
+    .pricing-content {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px; /*  */
+
+      main {
+        h1 {
+          text-align: center;
+          font-size: 42px;
+          font-weight: 500;
+          line-height: 1.1; /* 1.7 */
+          letter-spacing: -0.15rem;
+          margin-bottom: 10px;
+        }
+        h2 {
+          max-width: 80%;
+          margin: auto;
+          font-size: 22px; /* 26 */
+          text-align: center;
+          line-height: 1.2;
+        }
+      }
+      .wrapper-process {
+        display: flex;
+        flex-direction: column; /* n  */
+        justify-content: space-between;
+        gap: 0px; /* 30 */
+
+        .card-pricing {
+          @include fw.border-shadow();
+          width: 100%;
+          max-width: 420px;
+          padding: 40px;
+          text-align: center;
+          margin: 10px 0px 40px; /*  */
+
+          h3 {
+            font-size: 28px;
+            font-weight: 500;
+          }
+          p {
+            font-size: 16px;
+            line-height: 1.3;
+            margin-top: 16px; /* 20 */
+          }
+          h2 {
+            font-size: 50px; /* 60  */
+            font-weight: 700;
+            margin: 30px 0px; /* 40 */
+            span {
+              font-size: 18px;
+              font-weight: 200;
+            }
+          }
+          ul {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 18px; /* 28 */
+            margin-bottom: 30px; /* 40 */
+
+            li {
+              display: flex;
+              align-items: center;
+              font-size: 16px; /* 18 */
+              list-style-type: none;
+              &::before {
+                content: "";
+                margin-right: 15px;
+                display: inline-block;
+                height: 20px;
+                width: 20px;
+                background-image: url(/assets/image/svg/check-solid.svg);
+                background-repeat: no-repeat;
+              }
+              > span {
+                > span {
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+          > :last-child {
+            @include fw.btn-primary(
+              $bg-color: fw.$primary-color,
+              $text-color: fw.$dark-color,
+              $hover-bg-color: fw.$dark-color,
+              $hover-text-color: fw.$white-color
+            );
+            > a {
+              /*  */
+              padding: 0.8rem 1rem; /*  */
+              border-radius: 0.7rem; /*  */
+              font-size: 1rem; /*  */
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.footer-pages {
+  background-color: fw.$primary-color;
+  padding: 30px 15px; /* 40 */
+  > :first-child {
+    margin: auto;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* n */
+    justify-content: space-between;
+    gap: 10px;
+
+    img {
+      height: 28px; /* 42 */
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
 /* MEDIAS */
 @media (min-width: 781px) {
   .page-content {
@@ -1257,6 +1388,60 @@ body {
       }
       .contact {
         display: none;
+      }
+    }
+  }
+
+  /* PRICING PAGE */
+  .page-content {
+    &.page {
+      .pricing-content {
+        gap: 80px;
+
+        main {
+          h1 {
+            line-height: 1.7;
+          }
+          h2 {
+            font-size: 26px;
+          }
+        }
+        .wrapper-process {
+          flex-direction: row;
+          gap: 30px;
+          .card-pricing {
+            p {
+              margin-top: 20px;
+            }
+            h2 {
+              font-size: 60px;
+              margin: 40px 0px;
+            }
+            ul {
+              gap: 28px;
+              margin-bottom: 40px;
+              li {
+                font-size: 18px;
+              }
+            }
+            > :last-child {
+              > a {
+                padding: 1.5rem 2rem;
+                border-radius: 1rem;
+                font-size: 1.25rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-pages {
+    padding: 40px 15px;
+    > :first-child {
+      flex-direction: row;
+      img {
+        height: 42px;
       }
     }
   }
