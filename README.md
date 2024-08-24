@@ -2,6 +2,8 @@
 
 Este repositório contém uma aplicação front-end desenvolvida com HTML, CSS/SASS e JavaScript, baseada em um template de design criado no Figma. O projeto foi elaborado para praticar habilidades de desenvolvimento web, incluindo a implementação de layouts responsivos e a estilização avançada com SASS.
 
+![Cover](./assets/image/Captura%20de%20tela%202024-08-23%20211322.png)
+
 ### Tecnologias Utilizadas
 
 - HTML5: Estruturação semântica do conteúdo.
